@@ -1,0 +1,19 @@
+digest: 68ec3152
+name: dataset
+profile: '{"num_rows": 734, "num_elements": 11010}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "Age", "required": true},
+  {"type": "double", "name": "RestingBP", "required": true}, {"type": "double", "name":
+  "Cholesterol", "required": true}, {"type": "double", "name": "FastingBS", "required":
+  true}, {"type": "double", "name": "MaxHR", "required": true}, {"type": "double",
+  "name": "Oldpeak", "required": true}, {"type": "double", "name": "Sex_M", "required":
+  true}, {"type": "double", "name": "ChestPainType_ATA", "required": true}, {"type":
+  "double", "name": "ChestPainType_NAP", "required": true}, {"type": "double", "name":
+  "ChestPainType_TA", "required": true}, {"type": "double", "name": "RestingECG_Normal",
+  "required": true}, {"type": "double", "name": "RestingECG_ST", "required": true},
+  {"type": "double", "name": "ExerciseAngina_Y", "required": true}, {"type": "double",
+  "name": "ST_Slope_Flat", "required": true}, {"type": "double", "name": "ST_Slope_Up",
+  "required": true}]}'
+source: '{"tags": {"mlflow.user": "Asus", "mlflow.source.name": "d:\\Kuliah\\Coding
+  Camp 2025\\MSML_Arieffathin\\Membangun_Model\\Modelling.py", "mlflow.source.type":
+  "LOCAL"}}'
+source_type: code

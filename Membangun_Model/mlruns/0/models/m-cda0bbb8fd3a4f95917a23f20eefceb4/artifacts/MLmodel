@@ -1,0 +1,39 @@
+artifact_path: file:///D:/Kuliah/Coding%20Camp%202025/MSML_Arieffathin/mlruns/0/models/m-cda0bbb8fd3a4f95917a23f20eefceb4/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.4
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 3.1.0
+model_id: m-cda0bbb8fd3a4f95917a23f20eefceb4
+model_size_bytes: 1136
+model_uuid: m-cda0bbb8fd3a4f95917a23f20eefceb4
+prompts: null
+run_id: 811ae44b5a284202ae0ac4ff00a9643f
+signature:
+  inputs: '[{"type": "double", "name": "Age", "required": true}, {"type": "double",
+    "name": "RestingBP", "required": true}, {"type": "double", "name": "Cholesterol",
+    "required": true}, {"type": "double", "name": "FastingBS", "required": true},
+    {"type": "double", "name": "MaxHR", "required": true}, {"type": "double", "name":
+    "Oldpeak", "required": true}, {"type": "double", "name": "Sex_M", "required":
+    true}, {"type": "double", "name": "ChestPainType_ATA", "required": true}, {"type":
+    "double", "name": "ChestPainType_NAP", "required": true}, {"type": "double", "name":
+    "ChestPainType_TA", "required": true}, {"type": "double", "name": "RestingECG_Normal",
+    "required": true}, {"type": "double", "name": "RestingECG_ST", "required": true},
+    {"type": "double", "name": "ExerciseAngina_Y", "required": true}, {"type": "double",
+    "name": "ST_Slope_Flat", "required": true}, {"type": "double", "name": "ST_Slope_Up",
+    "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-07-05 15:53:58.904037'

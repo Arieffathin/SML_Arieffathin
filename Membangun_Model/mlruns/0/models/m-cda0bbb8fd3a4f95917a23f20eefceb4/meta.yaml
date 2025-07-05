@@ -1,0 +1,10 @@
+artifact_location: file:///D:/Kuliah/Coding%20Camp%202025/MSML_Arieffathin/mlruns/0/models/m-cda0bbb8fd3a4f95917a23f20eefceb4/artifacts
+creation_timestamp: 1751730838886
+experiment_id: '0'
+last_updated_timestamp: 1751730848566
+model_id: m-cda0bbb8fd3a4f95917a23f20eefceb4
+model_type: null
+name: model
+source_run_id: 811ae44b5a284202ae0ac4ff00a9643f
+status: 2
+status_message: null
