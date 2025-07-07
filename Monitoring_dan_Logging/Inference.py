@@ -1,26 +1,20 @@
-from prometheus_client import start_http_server, Summary, Counter
-import time
-import random
+import requests
+import json
 
-REQUEST_TIME = Summary('request_processing_seconds', 'Time spent processing request')
-REQUEST_COUNT = Counter('inference_request_count', 'Total number of inference requests')
-ERROR_COUNT = Counter('inference_error_count', 'Total number of inference errors')
+url = "http://127.0.0.1:5002/invocations"  
 
-@REQUEST_TIME.time()
-def simulate_inference(success=True):
-    REQUEST_COUNT.inc()
-    time.sleep(random.uniform(0.1, 0.5))  
-    if not success:
-        ERROR_COUNT.inc()
+payload = {
+    "columns": ["feature1", "feature2", "feature3", "feature4"],
+    "data": [
+        [1.0, 2.0, 3.0, 4.0]
+    ]
+}
 
-if __name__ == '__main__':
-    start_http_server(9000)
-    print("Prometheus metrics server running on :9000")
+headers = {
+    "Content-Type": "application/json"
+}
 
-    while True:
-        if random.random() < 0.7:
-            simulate_inference(success=True)
-        else:
-            simulate_inference(success=False)
-        
-        time.sleep(2)
+response = requests.post(url, data=json.dumps(payload), headers=headers)
+
+print("Status Code:", response.status_code)
+print("Response:", response.json())
